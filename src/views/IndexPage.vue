@@ -22,7 +22,7 @@ This website use:
         >
           {{ $t("Follow") }}:
           <a
-            href="https://github.com/lesailesdumontblanc-com/eleves-bookandglide"
+            href="https://github.com/highcanfly-club/eleves-bookandglide"
             >{{ $t("repository") }}</a
           >
         </p>
