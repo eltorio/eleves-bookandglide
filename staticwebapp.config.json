@@ -1,0 +1,7 @@
+{
+  "routes": [
+  ],
+  "platform": {
+    "apiRuntime": "node:18"
+  }
+}
