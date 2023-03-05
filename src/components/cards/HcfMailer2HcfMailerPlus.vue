@@ -122,6 +122,7 @@ function getUsers(data:string){
       ville: 'city',
       portable: 'mobile',
       fixe: 'tel',
+      licence: 'licence',
       rawAttribs: 'rawAttribs',
     })
   for(let i=1;i<parsed.length;i++)
@@ -139,6 +140,7 @@ function getUsers(data:string){
       ville: rawAttribs.ville,
       portable: rawAttribs.portable,
       fixe: rawAttribs.fixe,
+      licence: rawAttribs.licence,
       rawAttribs: rawAttribs,
     }
     peoples.push(people)
