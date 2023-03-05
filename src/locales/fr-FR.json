@@ -37,9 +37,10 @@
   "mask_token": "cacher le jeton",
   "nav_lang": "langue",
   "enter_link": "Choisissez le fichier Excel",
-  "drop_file": "Déposer votre fichier XLS d'élèves Book&Glide ou",
-  "clic_here": "cliquer ici",
+  "drop_file": "Déposez votre fichier XLS d'élèves Book&Glide ou",
+  "clic_here": "cliquez ici",
   "convert_xls": "pour convertir votre liste",
   "remove": "enlever",
-  "download": "Télécharger"
+  "download": "Télécharger",
+  "drop_hcf": "Déposez ici votre fichier CSV HFCMailer ou  "
 }

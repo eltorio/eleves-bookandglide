@@ -20,7 +20,9 @@
   "dependencies": {
     "@azure/functions": "^3.5.0",
     "@vueuse/core": "^9.13.0",
-    "jose": "^4.13.0",
+    "csv-parse": "^5.3.6",
+    "csv-stringify": "^6.3.0",
+    "jose": "^4.13.1",
     "pinia": "^2.0.32",
     "vue": "3.2.47",
     "vue-i18n": "^9.2.2",

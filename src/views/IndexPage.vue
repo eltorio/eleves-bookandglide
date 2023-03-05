@@ -47,6 +47,10 @@ This website use:
     <div id="shortenerlogik" class="mt-4">
       <converter-card />
     </div>
+    <hr-dotted />
+    <div id="1to2" class="mt-2">
+      <hcf-mailer2-hcf-mailer-plus/>
+    </div>
     <block-footer />
     <div
       class="mt-2 ml-2 text-ambgrey-100 text-xs font-neutra-demi uppercase absolute top-0 left-0"
@@ -59,6 +63,7 @@ This website use:
 <script setup lang="ts">
 import LightButton from "@/components/ui/LightButton.vue";
 import ConverterCard from "@/components/cards/ConverterCard.vue";
+import HcfMailer2HcfMailerPlus from "@/components/cards/HcfMailer2HcfMailerPlus.vue"
 import HrDotted from "@/components/ui/HRDotted.vue";
 import ChangLang from "@/utilities/ChangLang.vue";
 import BlockFooter from "@/components/footers/BlockFooter.vue";

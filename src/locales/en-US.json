@@ -41,5 +41,6 @@
   "convert_xls": "to convert your list",
   "clic_here": "click here",
   "remove": "to remove",
-  "download": "Download"
+  "download": "Download",
+  "drop_hcf": "Drop your HFCMailer CSV file here or "
 }
