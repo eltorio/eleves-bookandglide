@@ -22,7 +22,7 @@ This website use:
       class="w-px h-px opacity-0 overflow-hidden absolute"
       @change="onChange"
       ref="file"
-      accept=".pdf,.jpg,.jpeg,.png"
+      accept=".xls"
     />
 
     <label for="assetsFieldHandle" class="block cursor-pointer">
@@ -53,7 +53,7 @@ This website use:
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
-import { getStudents } from "@/BookAndGlide";
+import { getPersons } from "@/BookAndGlide";
 import { useI18n } from "vue-i18n";
 
 const {t} = useI18n()
@@ -85,7 +85,7 @@ function onChange() {
     filelist.value = [...file.value.files];
     readFile(filelist.value[0]).then((data) => {
       if (data !== null) {
-        csv.value = getStudents(data);
+        csv.value = getPersons(data);
         const spanPlaceHolder = document.getElementById("resultFile");
         if (spanPlaceHolder !== null) {
           replaceNodeWithDownloadLink(spanPlaceHolder, csv.value, "eleves.csv");
