@@ -88,7 +88,7 @@ function onChange() {
         csv.value = getPersons(data);
         const spanPlaceHolder = document.getElementById("resultFile");
         if (spanPlaceHolder !== null) {
-          replaceNodeWithDownloadLink(spanPlaceHolder, csv.value, "eleves.csv");
+          replaceNodeWithDownloadLink(spanPlaceHolder, csv.value, "b&g.csv");
         }
       }
     });
