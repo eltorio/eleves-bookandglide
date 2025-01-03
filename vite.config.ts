@@ -17,8 +17,8 @@ import fs from 'fs'
 export default defineConfig({
   plugins: [
     vue(),
-    vitePluginFontawesomeminify(),
-    vitePluginNeutrafaceMinify(),
+    //vitePluginFontawesomeminify(),
+    //vitePluginNeutrafaceMinify(),
   ],
   resolve: {
     alias: {

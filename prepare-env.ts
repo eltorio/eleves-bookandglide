@@ -1,7 +1,6 @@
 /*generate auth0-conf.json*/
 import fs from "fs"
-import https from "https"
-import packageJsonLock from "./package-lock.json" assert {type:"json"}
+import packageJsonLock from "./package-lock.json" with {type:"json"}
 import {LineCount} from "@sctg/code-stats"
 
 const results = await LineCount.countLines(['src'])
@@ -28,7 +27,7 @@ fs.writeFile(
 
   //Install necessary flags
 import {availableLanguages} from './src/config/locales.js'
-availableLanguages.forEach((lang)=>{
-  const baseFile = lang.substring(3).toLowerCase()
+availableLanguages.forEach((language)=>{
+  const baseFile = language.lang.substring(3).toLowerCase()
   fs.copyFileSync(`./flags/${baseFile}.svg`,`./src/assets/lang/${baseFile}.svg`)
 })

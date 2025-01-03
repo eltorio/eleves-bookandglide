@@ -4,5 +4,11 @@
  * @returns a vite transformed url string
  */
 export function $require(url:string):string{
-    return new URL(`../assets/${url.replace('@/assets/','')}`,import.meta.url).href
+    const correctedUrl = `../assets/${url.replace('@/assets/','')}`;
+    let metaUrl = import.meta.url;
+    if (metaUrl.search(/\?/) !== -1){
+      metaUrl = metaUrl.split('?')[0]
+    } 
+    console.log(`req url: ${url} correctedUrl: ${correctedUrl} metaUrl:${metaUrl}`);
+    return new URL(correctedUrl,metaUrl).href
   }
