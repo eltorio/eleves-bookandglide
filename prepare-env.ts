@@ -28,6 +28,6 @@ fs.writeFile(
   //Install necessary flags
 import {availableLanguages} from './src/config/locales.js'
 availableLanguages.forEach((language)=>{
-  const baseFile = language.lang.substring(3).toLowerCase()
+  const baseFile = language.substring(3).toLowerCase()
   fs.copyFileSync(`./flags/${baseFile}.svg`,`./src/assets/lang/${baseFile}.svg`)
 })

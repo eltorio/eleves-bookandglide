@@ -39,7 +39,7 @@ import { onBeforeMount, ref } from 'vue'
 import { useLocaleStore } from '@/utilities/LocaleHelper.js'
 import { useRoute,useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
-import { svgs } from '@/config/locales.js'
+const svgs = import.meta.glob('../assets/lang/*.svg', { eager: true })
 const langOpen = ref(false)
 const localeCounter = useLocaleStore()
 const {locale,availableLocales,messages,fallbackLocale,t} = useI18n({})
