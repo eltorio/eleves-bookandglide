@@ -1,6 +1,6 @@
 /*!
 =========================================================
-* © 2023 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
+* © 2025 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
 =========================================================
 This website use:
 - Vite, Vue3, FontAwesome 6, TailwindCss 3
@@ -16,7 +16,7 @@ gulp.task("licensesSrc", async function () {
     .pipe(
       gap.prependText(`/*!
 =========================================================
-* © 2023 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
+* © 2025 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
 =========================================================
 This website use:
 - Vite, Vue3, FontAwesome 6, TailwindCss 3
@@ -32,7 +32,7 @@ This website use:
     .pipe(
       gap.prependText(`<!--
 =========================================================
-* © 2023 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
+* © 2025 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
 =========================================================
 This website use:
 - Vite, Vue3, FontAwesome 6, TailwindCss 3
@@ -45,11 +45,11 @@ This website use:
 gulp.task("licenses", async function () {
   // this is to add Copyright in the production mode for the minified js
   gulp
-    .src("dist/js/*.js", { base: "./" })
+    .src("dist/**/*.js", { base: "./" })
     .pipe(
       gap.prependText(`/*!
 =========================================================
-* © 2023 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
+* © 2025 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
 =========================================================
 This website use:
 - Vite, Vue3, FontAwesome 6, TailwindCss 3
@@ -63,7 +63,7 @@ This website use:
     .pipe(
       gap.prependText(`<!--
 =========================================================
-* © 2023 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
+* © 2025 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
 =========================================================
 This website use:
 - Vite, Vue3, FontAwesome 6, TailwindCss 3
@@ -74,11 +74,11 @@ This website use:
 
   // this is to add Copyright in the production mode for the minified css
   gulp
-    .src("dist/css/*.css", { base: "./" })
+    .src("dist/**/*.css", { base: "./" })
     .pipe(
       gap.prependText(`/*!
 =========================================================
-* © 2023 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
+* © 2025 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
 =========================================================
 This website use:
 - Vite, Vue3, FontAwesome 6, TailwindCss 3

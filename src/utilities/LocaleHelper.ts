@@ -1,6 +1,6 @@
 /*!
 =========================================================
-* © 2023 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
+* © 2025 Ronan LE MEILLAT for Les Ailes du Mont-Blanc
 =========================================================
 This website use:
 - Vuejs v3
